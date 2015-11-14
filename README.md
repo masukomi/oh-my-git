@@ -16,13 +16,19 @@
 
 ![alt tag](https://raw.github.com/arialdomartini/oh-my-git-gh-pages/gh-pages/images/shut-up.gif)
 
+# Oh-My-Git 
+Is a better shell prompt for git users. When you're in a git repo it will tell you what branch you're on, if you have untracked,staged, deleted, and/or modified files, what remote branch it's trackingand much more. 
+
+
+### Note
+This is is a fork from [the original repo](https://github.com/arialdomartini/oh-my-git) that has some graphical / readibility improvements.
 
 # Installation
 ## <a name="install-the-font"></a>The Font
 
-oh-my-git is shipped with 3 themes. The one showed above is called [oppa-lana-style](https://github.com/arialdomartini/oh-my-git-themes/blob/oppa-lana-style/oppa-lana-style.zsh-theme). It's based on the [Awesome-Terminal-Fonts](https://github.com/gabrielelana/awesome-terminal-fonts) by [@gabrielelana](https://github.com/gabrielelana). The screenshots above use the font [Source Code Pro](https://github.com/adobe/Source-Code-Pro) by Adobe patched to include additional glyphs from [Powerline](https://github.com/powerline/powerline) and from Awesome-Terminal-Fonts, but you can choose any other of the Awesome-Terminal-Fonts.
+oh-my-git is shipped with 3 themes. The one showed above is called [oppa-lana-style](https://github.com/arialdomartini/oh-my-git-themes/blob/oppa-lana-style/oppa-lana-style.zsh-theme). It's based on the [Awesome-Terminal-Fonts](https://github.com/gabrielelana/awesome-terminal-fonts/tree/patching-strategy/patched) by [@gabrielelana](https://github.com/gabrielelana). The screenshots above use the font Source Code Pro by [Adobe](https://github.com/adobe/Source-Code-Pro) patched to include additional glyphs from [Powerline](https://github.com/powerline/powerline) and from Awesome-Terminal-Fonts, but you can choose any other of the Awesome-Terminal-Fonts.
 
-You can freely [download](https://github.com/gabrielelana/awesome-terminal-fonts/tree/patching-strategy/patched) the fonts from the original repo.
+**[Download](https://github.com/gabrielelana/awesome-terminal-fonts/tree/patching-strategy/patched)** the fonts from the original repo.
 
 To install one of the fonts, on OS X just double click on the corresponding ```ttf``` file and click on ```Install font```. So far, I didn't find a way to make the fallback strategy work on OS X.
 
@@ -31,14 +37,19 @@ On Linux you can either [install the patched font](#install-the-patched-font) or
 Then, configure your terminal with the desider font, and restart it.
 
 ## Bash
+Install the font first!
 
-One liner for OS X:
+### One liner for OS X:
 
-    git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git && echo source ~/.oh-my-git/prompt.sh >> ~/.profile
+    git clone https://github.com/masukomi/oh-my-git.git ~/.oh-my-git && echo source ~/.oh-my-git/prompt.sh >> ~/.profile
 
-One liner for Ubuntu:
+#### iTerm users:
+Go to prerefences > profiles. Choose the profile, and click the "Text" tab. Then
+choose the font you just installed for the "Non-ASCII Font".
 
-    git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git && echo source ~/.oh-my-git/prompt.sh >> ~/.bashrc
+### One liner for Ubuntu:
+
+    git clone https://github.com/masukomi/oh-my-git.git ~/.oh-my-git && echo source ~/.oh-my-git/prompt.sh >> ~/.bashrc
 
 Then restart your Terminal.
 
@@ -130,7 +141,9 @@ in the `.git/config` file of a repo to revert to the original prompt for that pa
 
 ![alt tag](https://raw.githubusercontent.com/arialdomartini/oh-my-git-gh-pages/master/images/samples/bad-font.png)
 
-**A**: It's likely that you forgot to [install the font](#install-the-font).
+**A**: It's likely that you forgot to [install the font](#install-the-font) or
+that you haven't configured your terminal app to use it for the Non-ASCII
+characters.
 
 ---
 
